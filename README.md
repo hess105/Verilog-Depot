@@ -10,7 +10,7 @@ Welcome to my Verilog Repository! This repository contains a collection of vario
 
 ## Introduction
 
-Verilog is a hardware description language (HDL) used for designing and simulating digital circuits. It is widely used in the field of digital design, FPGA programming, and ASIC development. This repository aims to provide a curated collection of Verilog projects that can serve as educational resources, reference implementations, or starting points for your own designs. A majority of these programs are designed to run on a simulation provided by Purdue Univeristy provided here: [https://verilog.ecn.purdue.edu/].
+Verilog is a hardware description language (HDL) used for designing and simulating digital circuits. It is widely used in the field of digital design, FPGA programming, and ASIC development. This repository aims to provide a curated collection of Verilog projects that can serve as educational resources, reference implementations, or starting points for your own designs. In these cases, an ice40HX8K FPGA is utilized to run the programs. A majority of these programs are designed to run on a simulation provided by Purdue Univeristy provided here: [https://verilog.ecn.purdue.edu/].
 
 ## Projects List
 
