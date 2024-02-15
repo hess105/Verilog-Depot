@@ -17,8 +17,6 @@ Verilog is a hardware description language (HDL) used for designing and simulati
 Below is a list of projects included in this repository:
 
 1. **Binary to 7-Segment Display Converter**: A Verilog module that takes a 3-digit binary input and converts it into signals to drive a 7-segment display.
-   
-   ![Binary to 7-Segment Display Converter](images/binary_to_7segment.png)
 
 ## How to Use
 
