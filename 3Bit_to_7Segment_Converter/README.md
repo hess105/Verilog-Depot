@@ -9,6 +9,12 @@ This program is designed to be utilized when a 3 bit input is utilized and a num
 
 This program was designed fully from scratch utilizing k-maps to find the boolean logic equations that can be used to determine when each segment should be on. The following k-maps and logic equations were used for every segment.
 
-(images/kmap_logic.PNG)
+
+![photo showing k-map and associated logic equations](kmap_logic.PNG)
 
 
+Within the actual program, we utilize 3 push buttons to act as A,B, and C logic values and utilize one of the 7-segmented displays as our output.
+
+## Verification
+
+![photo showing graphical simulation of the 7 segment display operating as expected](sim_verification.PNG)
