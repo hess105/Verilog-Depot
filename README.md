@@ -20,8 +20,6 @@ Below is a list of projects included in this repository:
    
    ![Binary to 7-Segment Display Converter](images/binary_to_7segment.png)
 
-2. *Add more projects here...*
-
 ## How to Use
 
 Each project in this repository is contained within its own directory. Inside each project directory, you will find the Verilog source files along with any necessary documentation or testbenches.
