@@ -1,0 +1,41 @@
+`default_nettype none
+// Empty top module
+
+module top (
+  // I/O ports
+  input  logic hz100, reset,
+  input  logic [20:0] pb,
+  output logic [7:0] left, right,
+         ss7, ss6, ss5, ss4, ss3, ss2, ss1, ss0,
+  output logic red, green, blue,
+
+  // UART ports
+  output logic [7:0] txdata,
+  input  logic [7:0] rxdata,
+  output logic txclk, rxclk,
+  input  logic txready, rxready
+  
+);
+
+  // Intermediate Wires
+  logic [1:0] pb_sel;
+  assign pb_sel = pb[1:0];
+  logic [3:0] pb_d;
+  assign pb_d = pb[7:4];
+  
+	mux4to1 u1(.sel(pb_sel), .d(pb_d), .y(green));
+  
+endmodule
+
+module mux4to1 (
+  output logic y,
+  inout logic [3:0]d,
+  input logic [1:0]sel
+);
+
+  assign y = (sel == 2'b00) ? d[0] :
+             (sel == 2'b01) ? d[1] :
+             (sel == 2'b10) ? d[2] :
+                              d[3];
+
+endmodule
