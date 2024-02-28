@@ -1,0 +1,30 @@
+module ssdec (
+
+  input logic [3:0] in,
+  input logic enable,
+  output logic [6:0] out
+
+);
+
+  // Saying assign [0000] to light up segments in reverse order I.E. G,F,E,D,C,B,A
+  assign out[6:0] = ((in == 4'h0) & (enable == 1'b1)) ? 7'b0111111 :
+               ((in == 4'h1) & (enable == 1'b1)) ? 7'b0000110 :
+               ((in == 4'h2) & (enable == 1'b1)) ? 7'b1011011 :
+               ((in == 4'h3) & (enable == 1'b1)) ? 7'b1001111 :
+               ((in == 4'h4) & (enable == 1'b1)) ? 7'b1100110 :
+               ((in == 4'h5) & (enable == 1'b1)) ? 7'b1101101 :
+               ((in == 4'h6) & (enable == 1'b1)) ? 7'b1111101 : 
+               ((in == 4'h7) & (enable == 1'b1)) ? 7'b0000111 : 
+               ((in == 4'h8) & (enable == 1'b1)) ? 7'b1111111 :
+               ((in == 4'h9) & (enable == 1'b1)) ? 7'b1100111 :
+               ((in == 4'ha) & (enable == 1'b1)) ? 7'b1110111 :
+               ((in == 4'hb) & (enable == 1'b1)) ? 7'b1111100 :
+               ((in == 4'hc) & (enable == 1'b1)) ? 7'b0111001 :
+               ((in == 4'hd) & (enable == 1'b1)) ? 7'b1011110 :
+               ((in == 4'he) & (enable == 1'b1)) ? 7'b1111001 :
+               ((in == 4'hf) & (enable == 1'b1)) ? 7'b1110001 :
+                                                   7'b0000000 ;
+  
+
+
+endmodule
