@@ -18,6 +18,8 @@ Below is a list of projects included in this repository:
 
 1. **Binary to 7-Segment Display Converter**: A Verilog module that takes a 3-digit binary input and converts it into signals to drive a 7-segment display.
 
+2. **Multiplexers and Encoders**: A collection of Verilog modules that fall into the realm of multiplexers and encoders of various types.
+
 ## How to Use
 
 Each project in this repository is contained within its own directory. Inside each project directory, you will find the Verilog source files along with any necessary documentation or testbenches.
